@@ -18,7 +18,7 @@ interface colorType {
 const PasswordCard =() => {
   const [showPassword, toggleShow] = useState(false);
   const [password, changePassword] = useState("");
-  const [green, changeGreen] = useState({ color: `red-500`, width: `0` });
+  const [green, changeGreen] = useState({ color: `bg-red-500`, width: `w-0` });
 
   useEffect(() => {
     const colorObj: colorType = {
@@ -72,7 +72,7 @@ const PasswordCard =() => {
                   type={showPassword ? "password" : "text"}
                   onChange={(e) => changePassword(e.target.value)}
                   placeholder="ABCdefc£$% "
-                  className={`border-${green.color} placeholder:text-zinc-600`}
+                  className={`border-green-800 placeholder:text-zinc-600`}
                 />
               </div>
             </div>
